@@ -9,12 +9,6 @@ import Menu from "./Menu";
 const Homepage = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route path="/Menu" component={Menu} />
-        <Route path="/About" component={About} />
-      </Switch>
-
       <Navbar bg="primary" expand="lg">
         <LinkContainer to="/Homepage">
           <Navbar.Brand>React-Bootstrap</Navbar.Brand>
@@ -31,6 +25,11 @@ const Homepage = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/Menu" component={Menu} />
+        <Route path="/About" component={About} />
+      </Switch>
     </Router>
   );
 };
