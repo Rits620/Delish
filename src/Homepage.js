@@ -1,13 +1,14 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./About";
 import Menu from "./Menu";
 
 const Homepage = () => {
   return (
+    
     <Router>
       <Navbar bg="primary" expand="lg">
         <LinkContainer to="/Homepage">
