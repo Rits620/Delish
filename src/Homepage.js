@@ -5,6 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./About";
 import Menu from "./Menu";
+import Menu from "./Contact";
 
 const Homepage = () => {
   return (
@@ -23,6 +24,9 @@ const Homepage = () => {
             <LinkContainer to="/About">
               <Nav.Link>About</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/Contact & Support">
+              <Nav.Link>About</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -30,6 +34,7 @@ const Homepage = () => {
         <Route exact path="/" component={Homepage} />
         <Route path="/Menu" component={Menu} />
         <Route path="/About" component={About} />
+        <Route path="/Contact" component={Contact} />
       </Switch>
     </Router>
   );
