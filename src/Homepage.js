@@ -9,6 +9,7 @@ const Homepage = () => {
       <div>Welcome to Delish!!</div>
     </React.Fragment>
   )
+
 };
 
 export default Homepage;
